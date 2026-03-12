@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Content Virality Predictor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="app">
+        <header class="hero">
+            <h1 class="title">Virality Predictor</h1>
+            <p class="subtitle">Estimate how shareable your content will be — fast and simple.</p>
+        </header>
+
+        <section class="card">
+            <label for="content" class="label">Your Content</label>
+            <textarea id="content" placeholder="Paste your content..." rows="6"></textarea>
+
+            <div class="actions">
+                <button id="predictBtn" class="btn" onclick="predict()">Predict</button>
+            </div>
+
+            <div id="result" class="result" aria-live="polite"></div>
+
+            <div id="cautionBox" class="caution-box hidden" role="status" aria-live="polite">Caution — This content is unlikely to go viral — consider tightening the message.</div>
+        </section>
+
+        <footer class="footer">Tip: Short, emotional and relevant posts tend to spread faster.</footer>
+    </main>
+</body>
+</html>
