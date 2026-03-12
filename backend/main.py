@@ -33,3 +33,6 @@ def predict(data: InputText):
     label = "Viral" if score > 0.5 else "Not Viral"
     
     return {"score": float(score), "label": label}
+@app.get("/")
+def home():
+    return {"message": "Content Virality Predictor API is running"}
